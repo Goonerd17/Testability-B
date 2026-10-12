@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="M01 Grade.of" tests="21" skipped="0" failures="0" errors="0" timestamp="2026-10-12T14:43:04.993Z" hostname="DESKTOP-V649BGN" time="0.019">
+  <properties/>
+  <testcase name="[1] GB 0 → BASIC" classname="com.testability.lab.billing.GradeTest$Of" time="0.002"/>
+  <testcase name="[2] GB 1 → BASIC" classname="com.testability.lab.billing.GradeTest$Of" time="0.001"/>
+  <testcase name="[3] GB 500000 → BASIC" classname="com.testability.lab.billing.GradeTest$Of" time="0.0"/>
+  <testcase name="[4] GB 999999 → BASIC" classname="com.testability.lab.billing.GradeTest$Of" time="0.001"/>
+  <testcase name="[5] GB 1000000 → SILVER" classname="com.testability.lab.billing.GradeTest$Of" time="0.001"/>
+  <testcase name="[6] GB 1000001 → SILVER" classname="com.testability.lab.billing.GradeTest$Of" time="0.0"/>
+  <testcase name="[7] GB 3000000 → SILVER" classname="com.testability.lab.billing.GradeTest$Of" time="0.0"/>
+  <testcase name="[8] GB 4999999 → SILVER" classname="com.testability.lab.billing.GradeTest$Of" time="0.0"/>
+  <testcase name="[9] GB 5000000 → GOLD" classname="com.testability.lab.billing.GradeTest$Of" time="0.0"/>
+  <testcase name="[10] GB 5000001 → GOLD" classname="com.testability.lab.billing.GradeTest$Of" time="0.0"/>
+  <testcase name="[11] GB 7000000 → GOLD" classname="com.testability.lab.billing.GradeTest$Of" time="0.0"/>
+  <testcase name="[12] GB 9999999 → GOLD" classname="com.testability.lab.billing.GradeTest$Of" time="0.0"/>
+  <testcase name="[13] GB 10000000 → VIP" classname="com.testability.lab.billing.GradeTest$Of" time="0.0"/>
+  <testcase name="[14] GB 10000001 → VIP" classname="com.testability.lab.billing.GradeTest$Of" time="0.001"/>
+  <testcase name="[15] GB 2147483647 → VIP" classname="com.testability.lab.billing.GradeTest$Of" time="0.0"/>
+  <testcase name="[16] GB 2147483648 → VIP" classname="com.testability.lab.billing.GradeTest$Of" time="0.0"/>
+  <testcase name="[17] GB 3000000000 → VIP" classname="com.testability.lab.billing.GradeTest$Of" time="0.001"/>
+  <testcase name="[18] GB 9223372036854775807 → VIP" classname="com.testability.lab.billing.GradeTest$Of" time="0.0"/>
+  <testcase name="[1] GB -1" classname="com.testability.lab.billing.GradeTest$Of" time="0.001"/>
+  <testcase name="[2] GB -1000000" classname="com.testability.lab.billing.GradeTest$Of" time="0.0"/>
+  <testcase name="[3] GB -9223372036854775808" classname="com.testability.lab.billing.GradeTest$Of" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

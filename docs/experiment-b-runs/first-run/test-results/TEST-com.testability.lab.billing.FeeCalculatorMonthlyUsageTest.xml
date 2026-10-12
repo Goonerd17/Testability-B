@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="M08 FeeCalculator.monthlyUsage" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-10-12T14:43:04.931Z" hostname="DESKTOP-V649BGN" time="0.018">
+  <properties/>
+  <testcase name="[코드 분석] 같은 달 이름이라도 연도가 다르면 제외 (2025-07 ≠ 2026-07)" classname="com.testability.lab.billing.FeeCalculatorMonthlyUsageTest" time="0.002"/>
+  <testcase name="TC-FEE-16 데이터: 10억 × 3 = 30억 (int 초과, BR-AMT-003)" classname="com.testability.lab.billing.FeeCalculatorMonthlyUsageTest" time="0.001"/>
+  <testcase name="TC-PRD-05 데이터: 다른 달 결제가 섞여도 당월 500,000만" classname="com.testability.lab.billing.FeeCalculatorMonthlyUsageTest" time="0.001"/>
+  <testcase name="BR-FEE-004/BR-STL-008 당월 결제가 없으면 0" classname="com.testability.lab.billing.FeeCalculatorMonthlyUsageTest" time="0.0"/>
+  <testcase name="[1] 2026-06-30T23:59:59.999999999+09:00 → 0원 (직전 월 마지막 1ns)" classname="com.testability.lab.billing.FeeCalculatorMonthlyUsageTest" time="0.0"/>
+  <testcase name="[2] 2026-07-01T00:00:00+09:00 → 1000000원 (TC-PRD-04 당월 시작 정각)" classname="com.testability.lab.billing.FeeCalculatorMonthlyUsageTest" time="0.001"/>
+  <testcase name="[3] 2026-07-31T23:59:59.999999999+09:00 → 1000000원 (당월 마지막 1ns)" classname="com.testability.lab.billing.FeeCalculatorMonthlyUsageTest" time="0.0"/>
+  <testcase name="[4] 2026-08-01T00:00:00+09:00 → 0원 (다음 월 시작 정각)" classname="com.testability.lab.billing.FeeCalculatorMonthlyUsageTest" time="0.001"/>
+  <testcase name="[5] 2026-06-30T15:00:00Z → 1000000원 (TC-PRD-06(a) UTC → 7월)" classname="com.testability.lab.billing.FeeCalculatorMonthlyUsageTest" time="0.0"/>
+  <testcase name="[6] 2026-06-30T14:59:59Z → 0원 (TC-PRD-06(b) UTC → 6월)" classname="com.testability.lab.billing.FeeCalculatorMonthlyUsageTest" time="0.001"/>
+  <testcase name="[7] 2026-07-31T14:59:59Z → 1000000원 (UTC 7/31 14:59:59 = KST 7/31 23:59:59)" classname="com.testability.lab.billing.FeeCalculatorMonthlyUsageTest" time="0.0"/>
+  <testcase name="[8] 2026-07-31T15:00:00Z → 0원 (UTC 7/31 15:00 = KST 8/1 00:00)" classname="com.testability.lab.billing.FeeCalculatorMonthlyUsageTest" time="0.0"/>
+  <testcase name="TC-PRD-09 윤년 2028-03: 2/29 마지막 1ns 제외, 3/1 정각 100 포함" classname="com.testability.lab.billing.FeeCalculatorMonthlyUsageTest" time="0.0"/>
+  <testcase name="TC-FEE-13/14 데이터: 같은 달 여러 건 합산 (100×3 = 300, 17×2 = 34)" classname="com.testability.lab.billing.FeeCalculatorMonthlyUsageTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

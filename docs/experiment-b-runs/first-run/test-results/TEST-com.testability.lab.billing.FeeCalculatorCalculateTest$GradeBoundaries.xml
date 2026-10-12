@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="등급 경계 (TC-GRD, BR-GRD-001)" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-12T14:43:04.888Z" hostname="DESKTOP-V649BGN" time="0.01">
+  <properties/>
+  <testcase name="TC-GRD-06 9,999,999 → GOLD / 10,000" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$GradeBoundaries" time="0.001"/>
+  <testcase name="TC-GRD-02 999,999 → BASIC / 30,000" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$GradeBoundaries" time="0.0"/>
+  <testcase name="TC-GRD-08 30억 → VIP / 3,000,000,000 / 5,000" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$GradeBoundaries" time="0.001"/>
+  <testcase name="TC-GRD-07 10,000,000 → VIP / 5,000" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$GradeBoundaries" time="0.0"/>
+  <testcase name="TC-AMT-08 GB = int 최댓값 / 최댓값+1 이 순환 없이 VIP" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$GradeBoundaries" time="0.0"/>
+  <testcase name="TC-GRD-04 4,999,999 → SILVER / 20,000" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$GradeBoundaries" time="0.001"/>
+  <testcase name="TC-GRD-09 여러 달 분산 합계 1,000,000 → SILVER / 20,000" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$GradeBoundaries" time="0.001"/>
+  <testcase name="TC-GRD-01 이력 없음 → BASIC / 0 / 1,000,000 / 30,000" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$GradeBoundaries" time="0.0"/>
+  <testcase name="TC-GRD-05 5,000,000 → GOLD / 10,000" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$GradeBoundaries" time="0.0"/>
+  <testcase name="TC-GRD-03 1,000,000 → SILVER / 20,000" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$GradeBoundaries" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

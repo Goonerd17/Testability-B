@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="M03 Grade.rateBasisPoints" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-12T14:43:04.982Z" hostname="DESKTOP-V649BGN" time="0.006">
+  <properties/>
+  <testcase name="[1] BASIC → 300bp" classname="com.testability.lab.billing.GradeTest$RateBasisPoints" time="0.002"/>
+  <testcase name="[2] SILVER → 200bp" classname="com.testability.lab.billing.GradeTest$RateBasisPoints" time="0.0"/>
+  <testcase name="[3] GOLD → 100bp" classname="com.testability.lab.billing.GradeTest$RateBasisPoints" time="0.001"/>
+  <testcase name="[4] VIP → 50bp" classname="com.testability.lab.billing.GradeTest$RateBasisPoints" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

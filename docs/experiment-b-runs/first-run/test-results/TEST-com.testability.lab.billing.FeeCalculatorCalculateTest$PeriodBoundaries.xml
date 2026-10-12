@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="산정 기간·시간 경계 (TC-PRD, BR-PRF-002/003, BR-TIM-001/002)" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-10-12T14:43:04.881Z" hostname="DESKTOP-V649BGN" time="0.007">
+  <properties/>
+  <testcase name="TC-PRD-05 13개월 함정: 2025-06과 당월을 빼면 BASIC / 600,000 / 500,000 / 15,000" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$PeriodBoundaries" time="0.001"/>
+  <testcase name="TC-PRD-03 직전 월 마지막 1ns 결제는 등급에 포함 → SILVER / 1,000,000 / 0 / 0" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$PeriodBoundaries" time="0.0"/>
+  <testcase name="TC-PRD-02 산정 기간 시작 1ns 전 결제는 제외 → BASIC / 0 / 0 / 0" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$PeriodBoundaries" time="0.0"/>
+  <testcase name="TC-PRD-06(a) UTC 2026-06-30T15:00:00Z 는 7월 귀속 → BASIC / 0 / 1,000,000 / 30,000" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$PeriodBoundaries" time="0.0"/>
+  <testcase name="TC-PRD-06(b) UTC 2026-06-30T14:59:59Z 는 6월 귀속 → SILVER / 1,000,000 / 0 / 0" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$PeriodBoundaries" time="0.0"/>
+  <testcase name="TC-PRD-10 결과에 산정 기간 2025-07 ~ 2026-06 기록" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$PeriodBoundaries" time="0.0"/>
+  <testcase name="TC-PRD-08 12개월 합산: 83,334×12 = 1,000,008 SILVER / 83,333×12 = 999,996 BASIC" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$PeriodBoundaries" time="0.0"/>
+  <testcase name="TC-PRD-04 당월 시작 정각 결제는 등급 제외·수수료 포함 → BASIC / 0 / 1,000,000 / 30,000" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$PeriodBoundaries" time="0.001"/>
+  <testcase name="TC-PRD-09 윤년: 정산 2028-03 → SILVER / 1,000,000 / 100 / 2" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$PeriodBoundaries" time="0.001"/>
+  <testcase name="TC-PRD-01 산정 기간 시작 정각(2025-07-01 00:00) 결제는 포함 → SILVER / 1,000,000 / 0 / 0" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$PeriodBoundaries" time="0.0"/>
+  <testcase name="TC-PRD-07 연도 경계: 정산 2026-01 (요청 2026-02-10)" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$PeriodBoundaries" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

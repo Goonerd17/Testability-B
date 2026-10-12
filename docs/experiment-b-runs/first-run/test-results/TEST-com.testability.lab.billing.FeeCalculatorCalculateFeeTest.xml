@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="M09 FeeCalculator.calculateFee" tests="43" skipped="0" failures="0" errors="0" timestamp="2026-10-12T14:43:04.696Z" hostname="DESKTOP-V649BGN" time="0.122">
+  <properties/>
+  <testcase name="[1] FB 16 × BASIC → 0원 (정확한 값 0.48)" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.025"/>
+  <testcase name="[2] FB 17 × BASIC → 1원 (정확한 값 0.51)" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[3] FB 50 × BASIC → 2원 (정확한 값 1.5)" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[4] FB 24 × SILVER → 0원 (정확한 값 0.48)" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.0"/>
+  <testcase name="[5] FB 25 × SILVER → 1원 (정확한 값 0.50)" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[6] FB 49 × GOLD → 0원 (정확한 값 0.49)" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.0"/>
+  <testcase name="[7] FB 50 × GOLD → 1원 (정확한 값 0.50)" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.0"/>
+  <testcase name="[8] FB 250 × GOLD → 3원 (정확한 값 2.5 (HALF_EVEN이면 2))" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.0"/>
+  <testcase name="[9] FB 899 × VIP → 4원 (정확한 값 4.495)" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.0"/>
+  <testcase name="[10] FB 900 × VIP → 5원 (정확한 값 4.5 (HALF_EVEN·절사면 4))" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[11] FB 999 × VIP → 5원 (정확한 값 4.995)" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.0"/>
+  <testcase name="[12] FB 300 × VIP → 2원 (정확한 값 1.5 (TC-FEE-13 월 합계))" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[13] FB 34 × BASIC → 1원 (정확한 값 1.02 (TC-FEE-14 월 합계))" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[14] FB 10000000 × BASIC → 300000원 (정확한 값 300000 (중간값 30억))" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[15] FB 3000000000 × BASIC → 90000000원 (정확한 값 90000000)" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[16] FB 3000000000 × VIP → 15000000원 (정확한 값 15000000)" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[17] FB 1000000 × BASIC → 30000원 (정확한 값 30000 (TC-GRD-01))" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[18] FB 1000000 × SILVER → 20000원 (정확한 값 20000 (TC-GRD-03))" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[19] FB 1000000 × GOLD → 10000원 (정확한 값 10000 (TC-GRD-05))" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.0"/>
+  <testcase name="[20] FB 1000000 × VIP → 5000원 (정확한 값 5000 (TC-GRD-07))" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[코드 분석] 등급이 null이면 계산하지 않고 예외" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.006"/>
+  <testcase name="[1] Long.MAX_VALUE × BASIC → 276701161105643274" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.003"/>
+  <testcase name="[2] Long.MAX_VALUE × SILVER → 184467440737095516" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[3] Long.MAX_VALUE × GOLD → 92233720368547758" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.0"/>
+  <testcase name="[4] Long.MAX_VALUE × VIP → 46116860184273879" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.0"/>
+  <testcase name="[1] FB 33 × BASIC → 1원" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.003"/>
+  <testcase name="[2] FB 183 × BASIC → 5원" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[3] FB 184 × BASIC → 6원" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[4] FB 74 × SILVER → 1원" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[5] FB 75 × SILVER → 2원" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[6] FB 149 × GOLD → 1원" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.0"/>
+  <testcase name="[7] FB 150 × GOLD → 2원" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[8] FB 2899 × VIP → 14원" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[9] FB 2900 × VIP → 15원" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="BR-FEE-005 음수 기준액은 거부 (IllegalArgumentException)" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.005"/>
+  <testcase name="[1] BASIC" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.0"/>
+  <testcase name="[2] SILVER" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.0"/>
+  <testcase name="[3] GOLD" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[4] VIP" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.0"/>
+  <testcase name="[1] FB 1 × BASIC → 0원" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.0"/>
+  <testcase name="[2] FB 1 × SILVER → 0원" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.002"/>
+  <testcase name="[3] FB 1 × GOLD → 0원" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <testcase name="[4] FB 1 × VIP → 0원" classname="com.testability.lab.billing.FeeCalculatorCalculateFeeTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

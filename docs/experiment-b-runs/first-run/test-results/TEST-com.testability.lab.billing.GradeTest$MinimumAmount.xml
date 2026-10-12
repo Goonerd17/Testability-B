@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="M02 Grade.minimumAmount" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-12T14:43:04.975Z" hostname="DESKTOP-V649BGN" time="0.005">
+  <properties/>
+  <testcase name="[1] BASIC → 0" classname="com.testability.lab.billing.GradeTest$MinimumAmount" time="0.002"/>
+  <testcase name="[2] SILVER → 1000000" classname="com.testability.lab.billing.GradeTest$MinimumAmount" time="0.0"/>
+  <testcase name="[3] GOLD → 5000000" classname="com.testability.lab.billing.GradeTest$MinimumAmount" time="0.0"/>
+  <testcase name="[4] VIP → 10000000" classname="com.testability.lab.billing.GradeTest$MinimumAmount" time="0.0"/>
+  <testcase name="[코드 분석] 각 등급의 하한을 Grade.of에 넣으면 그 등급, 하한-1이면 아래 등급" classname="com.testability.lab.billing.GradeTest$MinimumAmount" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

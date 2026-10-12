@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="수수료·반올림 (TC-FEE, BR-FEE-001 ~ 005) — calculate 경유" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-10-12T14:43:04.863Z" hostname="DESKTOP-V649BGN" time="0.017">
+  <properties/>
+  <testcase name="TC-FEE-04, 05 SILVER 200bp: 24→0, 25→1" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$Fees" time="0.002"/>
+  <testcase name="TC-FEE-06 ~ 08 GOLD 100bp: 49→0, 50→1, 250→3 (HALF_EVEN이면 2)" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$Fees" time="0.002"/>
+  <testcase name="TC-FEE-01 ~ 03 BASIC 300bp: 16→0, 17→1, 50→2" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$Fees" time="0.002"/>
+  <testcase name="TC-FEE-09 ~ 11 VIP 50bp: 899→4, 900→5, 999→5" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$Fees" time="0.001"/>
+  <testcase name="TC-FEE-16 BASIC 1,000,000,000×3 → 90,000,000" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$Fees" time="0.0"/>
+  <testcase name="TC-FEE-13 VIP 100×3 → 월 합계 1회 반올림 2 (거래별이면 3)" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$Fees" time="0.001"/>
+  <testcase name="TC-FEE-12 VIP, 당월 거래 없음 → VIP / 10,000,000 / 0 / 0" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$Fees" time="0.001"/>
+  <testcase name="등급별 적용 bp 기록: BASIC 300 / SILVER 200 / GOLD 100 / VIP 50 (BR-GRD-001, BR-STL-011)" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$Fees" time="0.003"/>
+  <testcase name="TC-FEE-15 BASIC 10,000,000 → 300,000 (중간값 30억이 int 초과)" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$Fees" time="0.0"/>
+  <testcase name="TC-FEE-14 BASIC 17×2 → 월 합계 1회 반올림 1 (거래별이면 2)" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$Fees" time="0.001"/>
+  <testcase name="TC-FEE-17 VIP 1,000,000,000×3 → 15,000,000" classname="com.testability.lab.billing.FeeCalculatorCalculateTest$Fees" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
